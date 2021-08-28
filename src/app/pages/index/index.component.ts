@@ -48,3 +48,6 @@ export class IndexComponent implements OnInit, OnDestroy {
     body.classList.remove("index-page");
   }
 }
+
+
+
