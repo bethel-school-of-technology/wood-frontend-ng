@@ -3,6 +3,8 @@
   color-on-scroll="100"
   id="navbar-top"
 >
+
+
   <div class="container">
     <div class="navbar-translate">
       <a
@@ -11,7 +13,11 @@
         [routerLink]="['/home']"
         target="_blank"
       >
-        <span> WOOD </span> The all in One Crossfit app
+      <h1>WOOD</h1>
+    
+
+
+       
       </a>
       <button
         aria-controls="navigation-index"
@@ -118,8 +124,11 @@
     </div>
   </div>
 </nav>
+
+
+
 <div class="wrapper">
-  <div class="page-header header-filter">
+  <div class="margintop" style="margin-top: 150px;">
     <div class="squares square1"></div>
     <div class="squares square2"></div>
     <div class="squares square3"></div>
@@ -127,18 +136,177 @@
     <div class="squares square5"></div>
     <div class="squares square6"></div>
     <div class="squares square7"></div>
-    <div class="container">
-      <div class="content-center brand">
+    <div class="container ">
+      <div class="row " >
+        
+<!--<div class="col-sm"></div>
+<!-- Default form login --
+<form class="text-center border border-light  ">
 
-        <h1 class="h1-seo">WOOD</h1>
-        <h3>
-          All in one Crossfit
-        </h3>
+  <p class="h4 mb-4 text-white">Sign in</p>
+
+  <!-- Email --
+  <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+  <!-- Password --
+  <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+  <div class="d-flex justify-content-around">
+    <div>
+      <!-- Remember me --
+      <mdb-checkbox [default]="true">Remember me</mdb-checkbox>
+    </div>
+    <div>
+      <!-- Forgot password --
+      <a href="">Forgot password?</a>
+    </div>
+  </div>
+
+  <!-- Sign in button --
+  <button mdbBtn color="info" block="true" class="my-4" type="submit">Sign in</button>
+
+  <!-- Register --
+  <p>Not a member?
+    <a href="">Register</a>
+  </p>
+
+  <!-- Social login 
+  <p>or sign in with:</p> --
+
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="facebook"></mdb-icon>
+  </a>
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="twitter"></mdb-icon>
+  </a>
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="linkedin"></mdb-icon>
+  </a>
+  <a type="button" class="light-blue-text mx-2">
+    <mdb-icon fab icon="github"></mdb-icon>
+  </a>
+
+</form>
+<!-- Default form login --
+<div class="col-sm"></div>-->
+
+<div class="col-sm "></div>
+
+<div class="wrapper col-sm">
+  <!--<div class="page-header">-->
+    <!--<div class="page-header-image"></div>-->
+    <!--<div class="content">-->
+      <!--<div class="container">-->
+        <div class="row">
+          <div class="col-lg-5 col-md-6 offset-lg-0 offset-md-3"></div>
+          <div class="card card-register">
+            <div class="card-header">
+              <img
+                alt="Card image"
+                class="card-img"
+                src="assets/img/square1-red.png"
+              />
+
+              <h4 class="card-title ">Login</h4>
+            </div>
+            <div class="card-body">
+              <form class="form">
+                <div
+                  class="input-group"
+                  [ngClass]="{ 'input-group-focus': focus === true }"
+                >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="tim-icons icon-single-02"> </i>
+                    </div>
+                  </div>
+                 <!-- <input
+                    class="form-control"
+                    placeholder="Full Name"
+                    type="text"
+                    (focus)="focus = true"
+                    (blur)="focus = false"
+                  />
+                </div>
+                <div
+                  class="input-group"
+                  [ngClass]="{ 'input-group-focus': focus1 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="tim-icons icon-email-85"> </i>
+                    </div>
+                  </div>-->
+                  
+                  <input
+                    class="form-control  "
+                    placeholder="Email"
+                    type="text"
+                    (focus)="focus1 = true"
+                    (blur)="focus1 = false"
+                  />
+                </div>
+                <div
+                  class="input-group"
+                  [ngClass]="{ 'input-group-focus': focus2 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="tim-icons icon-lock-circle"> </i>
+                    </div>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Password"
+                    type="password"
+                    (focus)="focus2 = true"
+                    (blur)="focus2 = false"
+                  />
+                </div>
+                <div class="form-check text-left">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" />
+
+                   <!-- <span class="form-check-sign"> </span> I agree to the
+                    <a href="javascript:void(0)"> terms and conditions </a> .-->
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="card-footer">
+              <a
+                class="btn btn-danger btn-round btn-lg"
+                href="javascript:void(0)"
+              >
+                Login!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="col-sm"></div>
+    
+
+<div></div>
+<div class="">
+           
+         </div>
+         <div class="   row ">
+           <!--<div class="col-sm"></div>-->
+             <div class=" col-sm "> <button class="btn ">About Us!</button> <img class="img-fluid " style="width: auto; height: 80%;"src="/assets/images/crossfit-360-3.jpeg"> </div> 
+        <div class="col-sm ">  <button class="btn">More Info!</button><img class="img-fluid "style="width: auto; height: 80%;"src="/assets/images/crossfit-360-4.jpeg"/> </div> 
+      <div  class="col-sm "> <button class="btn">Sign Up!</button> <img class="img-fluid " style="width: auto; height: 80%;"src="/assets/images/crossfit-360.jpeg"/> </div> 
+      <!-- <div class="col-sm"></div>-->
+      </div>
+         
+ 
+
+
       </div>
     </div>
   </div>
   <div class="main">
-    
+   
     <div class="section section-pagination">
       <img class="path" src="assets/img/path4.png" />
 
@@ -159,6 +327,10 @@
 
     </div>
 
+  </div>
+
+  <div class="row">
+    <div class="col-sm"><h2>Get that WOOD!</h2></div>
   </div>
 
   <!--footer-->
