@@ -15,7 +15,26 @@
       >
       <h1>WOOD</h1>
     
+<div class="row ">
+ 
+  <a class=" col-sm text-white" [routerLink]="['/events']">
+    <i class="tim-icons icon-image-02"> </i> Members Home
+  </a>
 
+  <a class=" col-sm text-white" [routerLink]="['/profile']">
+    <i class="tim-icons icon-single-02"> </i> About Us
+  </a>
+
+  <a class=" col-sm text-white" [routerLink]="['/landing']">
+    <i class="tim-icons icon-image-02"> </i> Membership Info
+  </a>
+
+  <a class=" col-sm text-white" [routerLink]="['/register']">
+    <i class="tim-icons icon-bullet-list-67"> </i> Register Here
+  </a>
+
+
+</div>
 
        
       </a>
@@ -93,7 +112,7 @@
             <p class="d-lg-none d-xl-none">Instagram</p>
           </a>
         </li>
-        <li class="dropdown nav-item" dropdown>
+       <!-- <li class="dropdown nav-item" dropdown>
           <a
             class="dropdown-toggle nav-link dropdown-toggle"
             data-toggle="dropdown"
@@ -103,24 +122,24 @@
             <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Getting Started
           </a>
           <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
-            <!-- Should we rename this "Register Here" ? -->
+            
             <a class="dropdown-item" [routerLink]="['/register']">
               <i class="tim-icons icon-bullet-list-67"> </i> Register Page
             </a>
-            <!-- Should we rename this "Membership Info" or something? -->
+            
             <a class="dropdown-item" [routerLink]="['/landing']">
               <i class="tim-icons icon-image-02"> </i> Landing Page
             </a>
-            <!-- Should we rename this "About Us"? -->
+           
             <a class="dropdown-item" [routerLink]="['/profile']">
               <i class="tim-icons icon-single-02"> </i> Profile Page
             </a>
-            <!-- should we rename the Events Page to like "Members Home" page or like "WOD & Events" page? -->
+           
             <a class="dropdown-item" [routerLink]="['/events']">
               <i class="tim-icons icon-image-02"> </i> Events Page
             </a>
           </div>
-        </li>
+        </li>-->
         <li class="nav-item">
         </li>
       </ul>
@@ -141,64 +160,12 @@
     <div class="container ">
       <div class="row " >
         
-<!--<div class="col-sm"></div>
-<!-- Default form login --
-<form class="text-center border border-light  ">
 
-  <p class="h4 mb-4 text-white">Sign in</p>
-
-  <!-- Email --
-  <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-  <!-- Password --
-  <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
-
-  <div class="d-flex justify-content-around">
-    <div>
-      <!-- Remember me --
-      <mdb-checkbox [default]="true">Remember me</mdb-checkbox>
-    </div>
-    <div>
-      <!-- Forgot password --
-      <a href="">Forgot password?</a>
-    </div>
-  </div>
-
-  <!-- Sign in button --
-  <button mdbBtn color="info" block="true" class="my-4" type="submit">Sign in</button>
-
-  <!-- Register --
-  <p>Not a member?
-    <a href="">Register</a>
-  </p>
-
-  <!-- Social login 
-  <p>or sign in with:</p> --
-
-  <a type="button" class="light-blue-text mx-2">
-    <mdb-icon fab icon="facebook"></mdb-icon>
-  </a>
-  <a type="button" class="light-blue-text mx-2">
-    <mdb-icon fab icon="twitter"></mdb-icon>
-  </a>
-  <a type="button" class="light-blue-text mx-2">
-    <mdb-icon fab icon="linkedin"></mdb-icon>
-  </a>
-  <a type="button" class="light-blue-text mx-2">
-    <mdb-icon fab icon="github"></mdb-icon>
-  </a>
-
-</form>
-<!-- Default form login --
-<div class="col-sm"></div>-->
 
 <div class="col-sm "></div>
 
 <div class="wrapper col-sm">
-  <!--<div class="page-header">-->
-    <!--<div class="page-header-image"></div>-->
-    <!--<div class="content">-->
-      <!--<div class="container">-->
+  
         <div class="row">
           <div class="col-lg-5 col-md-6 offset-lg-0 offset-md-3"></div>
           <div class="card card-register">
@@ -209,7 +176,7 @@
                 src="assets/img/square1-red.png"
               />
 
-              <h4 class="card-title text-white">Login</h4>
+              <h4 class="card-title text-black">Login</h4>
             </div>
             <div class="card-body">
               <form class="form">
@@ -222,23 +189,7 @@
                       <i class="tim-icons icon-single-02"> </i>
                     </div>
                   </div>
-                 <!-- <input
-                    class="form-control"
-                    placeholder="Full Name"
-                    type="text"
-                    (focus)="focus = true"
-                    (blur)="focus = false"
-                  />
-                </div>
-                <div
-                  class="input-group"
-                  [ngClass]="{ 'input-group-focus': focus1 === true }"
-                >
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
-                      <i class="tim-icons icon-email-85"> </i>
-                    </div>
-                  </div>-->
+                 
                   
                   <input
                     class="form-control  "
@@ -269,8 +220,7 @@
                   <label class="form-check-label">
                     <input class="form-check-input" type="checkbox" />
 
-                   <!-- <span class="form-check-sign"> </span> I agree to the
-                    <a href="javascript:void(0)"> terms and conditions </a> .-->
+                   
                   </label>
                 </div>
               </form>
@@ -292,15 +242,15 @@
       <div class="   row ">
            <!--<div class="col-sm"></div>-->
             <div class=" col-sm "> 
-               <button class="btn ">About Us!</button> 
+               <button class="btn " [routerLink]="['/profile']">About Us!</button> 
                <img class="img-fluid " style="width: auto; height: 80%;"src="/assets/images/CF4.png"> 
             </div> 
             <div class="col-sm ">  
-              <button class="btn">More Info!</button>
+              <button class="btn" [routerLink]="['/landing']">More Info!</button>
               <img class="img-fluid "style="width: auto; height: 80%;"src="/assets/images/CF3.png"/> 
             </div> 
             <div  class="col-sm "> 
-              <button class="btn">Sign Up!</button> 
+              <button class="btn" [routerLink]="['/register']">Sign Up!</button> 
               <img class="img-fluid " style="width: auto; height: 80%;"src="/assets/images/CF1.png"/> 
             </div> 
       <!-- <div class="col-sm"></div>-->
@@ -401,6 +351,11 @@
             >
               <i class="fab fa-instagram"> </i>
             </a>
+      
+
+
+            
+          
           </div>
         </div>
       </div>
