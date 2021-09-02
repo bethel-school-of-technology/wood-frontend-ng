@@ -9,11 +9,14 @@
         class="navbar-brand"
         [routerLink]="['/home']"
         placement="bottom"
-        tooltip="Designed and Coded by Creative Tim"
+        
       >
         <h1>WOOD</h1>
 
         <div class="row ">
+          <a class=" col-sm text-white" [routerLink]="['/home']">
+            Home
+       </a>
  
           <a class=" col-sm text-white" [routerLink]="['/events']">
             <i class="tim-icons icon-image-02"> </i> Members Home
@@ -27,9 +30,7 @@
             <i class="tim-icons icon-image-02"> </i> Membership Info
           </a>
         
-          <a class=" col-sm text-white" [routerLink]="['/register']">
-            <i class="tim-icons icon-bullet-list-67"> </i> Register Here
-          </a>
+          
         
         
         </div>
@@ -96,9 +97,9 @@
             <p class="d-lg-none d-xl-none">Instagram</p>
           </a>
         </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a class="nav-link" [routerLink]="['/home']"> Back to Home </a>
-        </li>
+        </li>-->
       </ul>
     </div>
   </div>
