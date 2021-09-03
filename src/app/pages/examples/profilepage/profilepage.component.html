@@ -10,7 +10,7 @@
        
         placement="bottom"
       >
-        <h1>WOOD</h1>
+        <h1>WOOD App</h1>
 
         <div class="row ">
           <a class=" col-sm text-white" [routerLink]="['/home']">
@@ -31,24 +31,23 @@
             <i class="tim-icons icon-bullet-list-67"> </i> Register Here
           </a>
         
-        
         </div>
 
 
       </a>
-      <button
-        aria-controls="navigation-index"
-        aria-label="Toggle navigation"
-        class="navbar-toggler navbar-toggler"
-        [attr.aria-expanded]="!isCollapsed"
-        (click)="isCollapsed = !isCollapsed"
-        id="navigation"
-        type="button"
-      >
-        <span class="navbar-toggler-bar bar1"> </span>
-        <span class="navbar-toggler-bar bar2"> </span>
-        <span class="navbar-toggler-bar bar3"> </span>
-      </button>
+        <button
+          aria-controls="navigation-index"
+          aria-label="Toggle navigation"
+          class="navbar-toggler navbar-toggler"
+          [attr.aria-expanded]="!isCollapsed"
+          (click)="isCollapsed = !isCollapsed"
+          id="navigation"
+          type="button"
+        >
+          <span class="navbar-toggler-bar bar1"> </span>
+          <span class="navbar-toggler-bar bar2"> </span>
+          <span class="navbar-toggler-bar bar3"> </span>
+        </button>
     </div>
     <div
       class="navbar-collapse justify-content-end"
@@ -57,7 +56,9 @@
     >
       <div class="navbar-collapse-header">
         <div class="row">
-          <div class="col-6 collapse-brand"><a> WOOD </a></div>
+          <div class="col-6 collapse-brand">
+            <a> WOOD App </a>
+          </div>
           <div class="col-6 collapse-close text-right">
             <button
               aria-controls="navigation-index"
@@ -66,8 +67,7 @@
               [attr.aria-expanded]="!isCollapsed"
               (click)="isCollapsed = !isCollapsed"
               id="navigation"
-              type="button"
-            >
+              type="button">
               <i class="tim-icons icon-simple-remove"> </i>
             </button>
           </div>
@@ -101,20 +101,83 @@
     </div>
   </div>
 </nav>
+ <!-- Wrpper is for the whole next three sections -->
 <div class="wrapper">
   <div class="page-header">
-    <img class="dots" src="assets/img/dots.png" />
+    <img class="dots" src="assets/img/dots.png" /> 
 
     <img class="path" src="assets/img/path4.png" />
 
+     <!-- section 01 has the picture slideshow and cf brief snippet -->
+    <div class="section">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6">
+            <div class="row justify-content-between align-items-center">
+              <carousel [showIndicators]="false">
+                <slide>
+                  <img
+                    alt="First slide"
+                    class="d-block"
+                    src="/assets/images/corssfit2.jpeg"
+                  />
+  
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Become Stronger</h4>
+                  </div>
+                </slide>
+                <slide>
+                  <img
+                    alt="Second slide"
+                    class="d-block"
+                    src="assets/images/crossfit1.jpeg"/>
+  
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Get Fitter</h4>
+                  </div>
+                </slide>
+                <slide>
+                  <img
+                    alt="Third slide"
+                    class="d-block"
+                    src="assets/images/crossfit3.jpeg"/>
+  
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>Improve Mobility</h4>
+                  </div>
+                </slide>
+              </carousel>
+            </div>
+          </div>  
+          <div class="col-md-5">
+            <h1 class="profile-title text-left">What We Offer</h1>
+            <h1 class="text-on-back">01</h1>
+            <p class="profile-description text-left">
+              At WOOD we specialize in CrossFit, which is functional movement training. We combine metabolic conditioning with gymnastics and olympic lifts to help you become the fittest and strongest you can be.
+            </p>
+            <div class="btn-wrapper pt-3">
+              <button
+                class="btn btn-simple btn-danger mr-1"
+                href="javascript:void(0)"
+                [routerLink]="'/register'"
+              >
+              Sign Up Today!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <!-- Section 02 the coach profile -->
     <div class="container align-items-center">
       <div class="row">
         <div class="col-lg-6 col-md-6">
-          <h1 class="profile-title text-left">Head Coach Audrey Clark</h1>
-          <h5 class="text-on-back">01</h5>
+          <h1 class="profile-title text-left">Head Coach Audrey</h1>
+          <h5 class="text-on-back">02</h5>
           <p class="profile-description">
-          I live in Sacramento, CA with my husband and our 5 dogs. I've been a CrossFit coach for almost a year, and have been doing CrossFit on and off for 5 years. I'm also pretty nerdy. I absolutely love Lord of the
-          Rings and the MCU. Fun fact about me is that none of my bench mark numbers are true. 
+          I'm from California. I live with my husband and our 5 billion dogs. I've been a CrossFit coach for almost a year, and have been doing CrossFit for over 5 years. CrossFit and software development are my life.
+          I absolutely love Lord of the Rings and the MCU too. A little fun fact about me is that none of the benchmark numbers below are true. 
           </p>
           <div class="btn-wrapper profile pt-3">
             <a
@@ -140,20 +203,18 @@
             </a>
           </div>
         </div>
+        
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
           <div class="card card-coin card-plain">
             <div class="card-header">
               <img
                 class="img-center img-fluid rounded-circle"
-                src="assets/img/Audrey.jpg"
-              />
+                src="assets/img/Audrey.jpg"/>
 
               <h4 class="title">Workouts</h4>
             </div>
             <div class="card-body">
-              <tabset
-                class="nav-tabs-danger justify-content-center tab-subcategories"
-              >
+              <tabset class="nav-tabs-danger justify-content-center tab-subcategories">
                 <tab heading="Benchmarks:">
                   <div class="table-responsive">
                     <table class="table tablesorter" id="plain-table">
@@ -183,73 +244,15 @@
       </div>
     </div>
   </div>
-  <div class="section">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-md-6">
-          <div class="row justify-content-between align-items-center">
-            <carousel [showIndicators]="true">
-              <slide>
-                <img
-                  alt="First slide"
-                  class="d-block"
-                  src="/assets/images/corssfit2.jpeg"
-                />
 
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Become Stronger</h5>
-                </div>
-              </slide>
-              <slide>
-                <img
-                  alt="Second slide"
-                  class="d-block"
-                  src="assets/images/crossfit1.jpeg"
-                />
-
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Get Fitter</h5>
-                </div>
-              </slide>
-              <slide>
-                <img
-                  alt="Third slide"
-                  class="d-block"
-                  src="assets/images/crossfit3.jpeg"
-                />
-
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Improve Mobility</h5>
-                </div>
-              </slide>
-            </carousel>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <h1 class="profile-title text-left">What We Offer</h1>
-          <h5 class="text-on-back">02</h5>
-          <p class="profile-description text-left">
-            At WOOD we specialize in CrossFit, functional movement training, and military conditioning.
-          </p>
-          <div class="btn-wrapper pt-3">
-            <button
-              class="btn btn-simple btn-danger mr-1"
-              href="javascript:void(0)"
-            >
-              <i class="tim-icons icon-book-bookmark"> </i> Bookmark
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+   <!-- Section 03 The contact us and footer -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="card card-plain">
             <div class="card-header">
-              <h1 class="profile-title text-left">Contact</h1>
+              <h1 class="profile-title text-left">Contact us today!</h1>
               <h5 class="text-on-back">03</h5>
             </div>
             <div class="card-body">
@@ -313,7 +316,7 @@
               <i class="tim-icons icon-square-pin"> </i>
             </div>
             <div class="description">
-              <h4 class="info-title">Our gym's address:</h4>
+              <h4 class="info-title">CrossFit Relentless</h4>
               <!-- This is Crossfit HQ's address -->
               <p>
                 2617 Broadway <br />
@@ -327,7 +330,7 @@
               <i class="tim-icons icon-mobile"> </i>
             </div>
             <div class="description">
-              <h4 class="info-title">Call us:</h4>
+              <h4 class="info-title">Call or text us:</h4>
               <p>
                 555-555-5555<br />
               </p>
@@ -337,64 +340,65 @@
       </div>
     </div>
   </section>
+
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <h1 class="title">WOOD</h1>
-        </div>
-        <div class="col-md-3">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/home']"> Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/landing']"> Landing </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/register']"> Register </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/profile']"> Profile </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link"
-                href="https://betheltech.net/?refcode=77835784&gclid=CjwKCAjw1JeJBhB9EiwAV612y3ZFxm699TVDU_zS5C91WkHsAOXl5vZ4XiuFZMNAODdxLTnXwQutXRoCXEcQAvD_BwE">
-                Contact Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"
-                href="https://betheltech.net/?refcode=77835784&gclid=CjwKCAjw1JeJBhB9EiwAV612y3ZFxm699TVDU_zS5C91WkHsAOXl5vZ4XiuFZMNAODdxLTnXwQutXRoCXEcQAvD_BwE">
-                About Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"
-                href="https://betheltech.net/?refcode=77835784&gclid=CjwKCAjw1JeJBhB9EiwAV612y3ZFxm699TVDU_zS5C91WkHsAOXl5vZ4XiuFZMNAODdxLTnXwQutXRoCXEcQAvD_BwE">
-                Blog
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h3 class="title">Follow us:</h3>
-          <div class="btn-wrapper profile">
-            <a class="btn btn-icon btn-neutral btn-round btn-simple mr-1" href="https://twitter.com/crossfit" target="_blank">
-              <i class="fab fa-twitter"> </i>
-            </a>
-            <a class="btn btn-icon btn-neutral btn-round btn-simple mr-1" href="https://www.facebook.com/crossfit" target="_blank">
-              <i class="fab fa-facebook-square"> </i>
-            </a>
-            <a class="btn btn-icon btn-neutral btn-round btn-simple" href="https://instagram.com/crossfit" target="_blank">
-              <i class="fab fa-instagram"> </i>
-            </a>
+          <div class="col-md-3">
+            <h1 class="title">WOOD App</h1>
           </div>
-        </div>
+          <div class="col-md-3">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/home']"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/landing']"> Login </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/register']"> Sign Up </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/profile']"> About Us </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="https://betheltech.net/?refcode=77835784&gclid=CjwKCAjw1JeJBhB9EiwAV612y3ZFxm699TVDU_zS5C91WkHsAOXl5vZ4XiuFZMNAODdxLTnXwQutXRoCXEcQAvD_BwE">
+                  Contact Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="https://betheltech.net/?refcode=77835784&gclid=CjwKCAjw1JeJBhB9EiwAV612y3ZFxm699TVDU_zS5C91WkHsAOXl5vZ4XiuFZMNAODdxLTnXwQutXRoCXEcQAvD_BwE">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="https://betheltech.net/?refcode=77835784&gclid=CjwKCAjw1JeJBhB9EiwAV612y3ZFxm699TVDU_zS5C91WkHsAOXl5vZ4XiuFZMNAODdxLTnXwQutXRoCXEcQAvD_BwE">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="title">Follow us:</h3>
+            <div class="btn-wrapper profile">
+              <a class="btn btn-icon btn-neutral btn-round btn-simple mr-1" href="https://twitter.com/crossfit" target="_blank">
+                <i class="fab fa-twitter"> </i>
+              </a>
+              <a class="btn btn-icon btn-neutral btn-round btn-simple mr-1" href="https://www.facebook.com/crossfit" target="_blank">
+                <i class="fab fa-facebook-square"> </i>
+              </a>
+              <a class="btn btn-icon btn-neutral btn-round btn-simple" href="https://instagram.com/crossfit" target="_blank">
+                <i class="fab fa-instagram"> </i>
+              </a>
+            </div>
+          </div>
       </div>
     </div>
   </footer>

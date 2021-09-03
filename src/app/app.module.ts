@@ -2,9 +2,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
-import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
+import { AppRoutingModule } from "./app-routing.module";
+import { CommonModule } from "@angular/common";
 
 
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
@@ -24,21 +25,23 @@ import { IndexComponent } from "./pages/index/index.component";
 import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import { WatercoolerpageComponent } from './pages/examples/watercoolerpage/watercoolerpage.component';
 @NgModule({
   declarations: [
-    AppComponent
-    // IndexComponent,
-    // ProfilepageComponent,
-    // RegisterpageComponent,
-    // LandingpageComponent
+   // AppComponent,
+   // IndexComponent,
+   // ProfilepageComponent,
+   // RegisterpageComponent,
+   // LandingpageComponent,
+   // WatercoolerpageComponent,
   ],
   imports: [
-  
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
+    CommonModule,
     // BsDropdownModule.forRoot(),
     // ProgressbarModule.forRoot(),
     // TooltipModule.forRoot(),
@@ -51,7 +54,6 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
     // CarouselModule.forRoot(),
     // ModalModule.forRoot()
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

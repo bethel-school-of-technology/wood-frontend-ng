@@ -2,7 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
-import { RouterModule } from "@angular/router";
+import { Routes, RouterModule } from "@angular/router";
 
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
@@ -22,6 +22,7 @@ import { ProfilepageComponent } from "./examples/profilepage/profilepage.compone
 import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
 import { EventspageComponent } from './examples/eventspage/eventspage.component';
+import { WatercoolerpageComponent } from './examples/watercoolerpage/watercoolerpage.component';
 
 @NgModule({
   imports: [
@@ -47,13 +48,16 @@ import { EventspageComponent } from './examples/eventspage/eventspage.component'
     ProfilepageComponent,
     RegisterpageComponent,
     LandingpageComponent,
-    EventspageComponent
+    EventspageComponent,
+    WatercoolerpageComponent
   ],
   exports: [
     IndexComponent,
     ProfilepageComponent,
     RegisterpageComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    EventspageComponent,
+    WatercoolerpageComponent
   ],
   providers: []
 })
