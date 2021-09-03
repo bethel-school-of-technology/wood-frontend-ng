@@ -7,6 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { CommonModule } from "@angular/common";
 
+
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 import { TooltipModule } from "ngx-bootstrap/tooltip";
@@ -35,7 +36,6 @@ import { WatercoolerpageComponent } from './pages/examples/watercoolerpage/water
    // WatercoolerpageComponent,
   ],
   imports: [
-    RouterModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
@@ -57,3 +57,7 @@ import { WatercoolerpageComponent } from './pages/examples/watercoolerpage/water
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+
+
+
+
