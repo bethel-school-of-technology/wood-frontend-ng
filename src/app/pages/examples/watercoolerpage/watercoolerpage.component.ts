@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy, HostListener } from "@angular/core";
 
 @Component({
-  selector: "app-registerpage",
-  templateUrl: "registerpage.component.html"
+  selector: 'app-watercoolerpage',
+  templateUrl: './watercoolerpage.component.html',
 })
+export class WatercoolerpageComponent implements OnInit {
 
-export class RegisterpageComponent implements OnInit, OnDestroy {
-  isCollapsed = true;
+isCollapsed = true;
   focus;
   focus1;
   focus2;
@@ -86,3 +86,4 @@ export class RegisterpageComponent implements OnInit, OnDestroy {
     body.classList.remove("register-page");
   }
 }
+
