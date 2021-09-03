@@ -7,7 +7,7 @@
     <div class="navbar-translate">
       <a
         class="navbar-brand"
-        [routerLink]="['/home']"
+        
         placement="bottom"
         
       >
@@ -136,13 +136,69 @@
                     </div>
                     <input
                       class="form-control"
-                      placeholder="Full Name"
+                      placeholder="First Name"
                       type="text"
                       (focus)="focus = true"
                       (blur)="focus = false"
                     />
                   </div>
-                  <div
+
+                  
+                      <div
+                        class="input-group"
+                        [ngClass]="{ 'input-group-focus': focus === true }"
+                      >
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="tim-icons icon-single-02"> </i>
+                          </div>
+                        </div>
+                        <input
+                          class="form-control"
+                          placeholder="Last Name"
+                          type="text"
+                          (focus)="focus = true"
+                          (blur)="focus = false"
+                        />
+                      </div>
+
+                      <div
+                        class="input-group"
+                        [ngClass]="{ 'input-group-focus': focus === true }"
+                      >
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="tim-icons icon-single-02"> </i>
+                          </div>
+                        </div>
+                        <input
+                          class="form-control"
+                          placeholder="Gender"
+                          type="text"
+                          (focus)="focus = true"
+                          (blur)="focus = false"
+                        />
+                      </div>
+
+                      <div
+                      class="input-group"
+                      [ngClass]="{ 'input-group-focus': focus2 === true }"
+                    >
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="tim-icons icon-calendar-60"> </i>
+                        </div>
+                      </div>
+                      <input
+                        class="form-control"
+                        placeholder="Birthday"
+                        type="date"
+                        (focus)="focus2 = true"
+                        (blur)="focus2 = false"
+                      />
+                    </div>
+
+                    <div
                     class="input-group"
                     [ngClass]="{ 'input-group-focus': focus1 === true }"
                   >
@@ -159,6 +215,101 @@
                       (blur)="focus1 = false"
                     />
                   </div>
+
+                    <div
+                      class="input-group"
+                      [ngClass]="{ 'input-group-focus': focus2 === true }"
+                    >
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="tim-icons icon-mobile"> </i>
+                        </div>
+                      </div>
+                      <input
+                        class="form-control"
+                        placeholder="(777) 777-7777"
+                        type="number"
+                        (focus)="focus2 = true"
+                        (blur)="focus2 = false"
+                      />
+                    </div>
+
+                    <div
+                      class="input-group"
+                      [ngClass]="{ 'input-group-focus': focus2 === true }"
+                    >
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="tim-icons icon-square-pin"> </i>
+                        </div>
+                      </div>
+                      <input
+                        class="form-control"
+                        placeholder="Street Address"
+                        type="number text"
+                        (focus)="focus2 = true"
+                        (blur)="focus2 = false"
+                      />
+                    </div>
+
+                    <div
+                    class="input-group"
+                    [ngClass]="{ 'input-group-focus': focus2 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-square-pin"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="City"
+                      type="text"
+                      (focus)="focus2 = true"
+                      (blur)="focus2 = false"
+                    />
+                  </div>
+
+                    <div
+                      class="input-group"
+                      [ngClass]="{ 'input-group-focus': focus2 === true }"
+                    >
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="tim-icons icon-square-pin"> </i>
+                        </div>
+                      </div>
+                      <input
+                        class="form-control"
+                        placeholder="State"
+                        type="text"
+                        (focus)="focus2 = true"
+                        (blur)="focus2 = false"
+                      />
+                    </div>
+
+                    <div
+                      class="input-group"
+                      [ngClass]="{ 'input-group-focus': focus2 === true }"
+                    >
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="tim-icons icon-square-pin"> </i>
+                        </div>
+                      </div>
+                      <input
+                        class="form-control"
+                        placeholder="Zip Code"
+                        type="number"
+                        (focus)="focus2 = true"
+                        (blur)="focus2 = false"
+                      />
+                    </div>
+
+                  
+
+                  
+
                   <div
                     class="input-group"
                     [ngClass]="{ 'input-group-focus': focus2 === true }"
