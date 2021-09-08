@@ -9,13 +9,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PricingComponent } from './pricing/pricing.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
-import { WatercoolerComponent } from './home/watercooler/watercooler.component';
-import { LoginComponent } from './home/login/login.component';
-import { authInterceptorProviders } from './_helpers/auth.interceptor';
-import { BoardUserComponent } from './board-user/board-user.component';
-import { BoardAdminComponent } from './board-admin/board-admin.component';
-import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
-import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +17,6 @@ import { ProfileComponent } from './profile/profile.component';
     PricingComponent,
     RegisterComponent,
     ContactComponent,
-    WatercoolerComponent,
-    LoginComponent,
-    BoardUserComponent,
-    BoardAdminComponent,
-    BoardModeratorComponent,
-    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +24,7 @@ import { ProfileComponent } from './profile/profile.component';
     NgbModule,
     NgModel
   ],
-  providers: [authInterceptorProviders],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
