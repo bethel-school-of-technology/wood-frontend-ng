@@ -24,24 +24,21 @@
 
 <div class="col-md-12">
   <div class="card card-container">
-    <img
-    id="profile-img"
-    src="/assets/images/CF16.jpg"
-    class="profile-img-card"
-    />
     <form
       name="form"
       novalidate
+      (ngSubmit)="createUser()"
       >
       <div class="form-group">
         <label for="username">Username</label>
         <input
           type="text"
           class="form-control"
-          name="username"
+          name="userName"
           required
           minlength="3"
           maxlength="20"
+          [(ngModel)]= "newUser.userName"
           />
       </div>
       <div class="form-group">
@@ -52,21 +49,23 @@
         name="email"
         required
         email
+        [(ngModel)]= "newUser.email"
         />
         </div>
 <div class="form-group">
-  <label for="password"></label>
+  <label for="password">Password</label>
   <input
     type="password"
     class="form-control"
     name="password"
     required
     minlength="6"
+    [(ngModel)]= "newUser.password"
     />
-        Password must be at least 6 characters
 </div>
 <div class="form-group">
-  <button class="btn btn-primary btn-block">Sign Up</button>
+  <button type="submit"
+  class="btn btn-primary btn-block">Sign Up</button>
 </div>
 
 
