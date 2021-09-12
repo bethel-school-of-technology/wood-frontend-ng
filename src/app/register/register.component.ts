@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../_services/auth.service';
+import { Router } from '@angular/router';
+import { User } from '../models/user';
+import { UsersService } from '../services/users.service';
 
 
 @Component({
@@ -8,29 +10,18 @@ import { AuthService } from '../_services/auth.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  newUser: User = new User()
 
-  form: any = {};
-  isSuccessful = false;
-  isSignUpFailed = false;
-  errorMessage = '';
-
-  constructor(private authService: AuthService) { }
+  constructor(private userService: UsersService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-onSubmit(): void {
-  this.authService.register(this.form).subscribe(
-    data => {
-      console.log(data);
-      this.isSuccessful = true;
-      this.isSignUpFailed = false;
-    },
-    err => {
-      this.errorMessage = err.error.message;
-      this.isSignUpFailed = true;
-    }
-  );
-}
-
+  createUser(){
+    this.userService.createUser(this.newUser).subscribe((userCreated: User) => {
+      this.newUser = userCreated;
+      console.log(userCreated);
+      this.router.navigate(["login"])
+    })
+  }
 }
