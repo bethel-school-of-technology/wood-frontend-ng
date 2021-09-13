@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { RegisterComponent } from './register/register.component';
+import { WatercoolerComponent } from './watercooler/watercooler.component';
 
 const routes: Routes = [
     { path: "", redirectTo: "home", pathMatch: "full" },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: "register", component: RegisterComponent },
   { path: "contact", component: ContactComponent },
   { path: "login", component: LoginComponent },
+  { path: "watercooler", component: WatercoolerComponent},
 ];
 
 @NgModule({

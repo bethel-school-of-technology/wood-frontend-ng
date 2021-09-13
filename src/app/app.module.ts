@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { LogoComponent } from './logo/logo.component';
+import { WatercoolerComponent } from './watercooler/watercooler.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { LogoComponent } from './logo/logo.component';
     NavbarComponent,
     FooterComponent,
     LogoComponent,
+    WatercoolerComponent,
   ],
   imports: [
     BrowserModule,
