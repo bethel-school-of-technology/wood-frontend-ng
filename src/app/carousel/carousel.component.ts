@@ -7,5 +7,5 @@ import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/n
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent {
-    images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/1600/500`);
+    images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/1920/600`);
 }
