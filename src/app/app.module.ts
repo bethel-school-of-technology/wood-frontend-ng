@@ -17,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
 import { LogoComponent } from './logo/logo.component';
 import { WatercoolerComponent } from './watercooler/watercooler.component';
 import { EventsComponent } from './events/events.component';
+import { AboutComponent } from './about/about.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { EventsComponent } from './events/events.component';
     LogoComponent,
     WatercoolerComponent,
     EventsComponent,
+    AboutComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
