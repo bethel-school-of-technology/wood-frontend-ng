@@ -11,6 +11,140 @@
       <div class="form-group">
       </div>
       <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+        type="firstName"
+        class="form-control"
+        name="firstName"
+        required
+        [(ngModel)]= "newUser.firstName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input
+        type="lastName"
+        class="form-control"
+        name="lastName"
+        required
+        [(ngModel)]= "newUser.lastName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+        type="username"
+        class="form-control"
+        name="username"
+        required
+        [(ngModel)]= "newUser.username"
+        />
+      </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" name="gender" [(ngModel)]= "newUser.gender">
+    <label class="form-check-label" for="gender">Male</label>
+  </div>
+  <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" [(ngModel)]= "newUser.gender">
+      <label class="form-check-label" for="exampleCheck1">Female</label>
+    </div>
+  <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" [(ngModel)]= "newUser.gender">
+        <label class="form-check-label" for="exampleCheck1">Do not wish to specify</label>
+  </div>
+
+      <div class="form-group">
+        <label for="Birthday">Birthday</label>
+        <input
+        type="birthday"
+        class="form-control"
+        name="birthday"
+        required
+        [(ngModel)]= "newUser.birthday"
+        />
+      </div>
+
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+        type="phoneNumber"
+        class="form-control"
+        name="phoneNumber"
+        required
+        [(ngModel)]= "newUser.phoneNumber"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="streetAddress">Address</label>
+        <input
+        type="streetAddress"
+        class="form-control"
+        name="streetAddress"
+        required
+        [(ngModel)]= "newUser.streetAddress"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        <input
+        type="city"
+        class="form-control"
+        name="city"
+        required
+        [(ngModel)]= "newUser.city"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+        type="phoneNumber"
+        class="form-control"
+        name="phoneNumber"
+        required
+        [(ngModel)]= "newUser.phoneNumber"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="state">State</label>
+        <input
+        type="state"
+        class="form-control"
+        name="state"
+        required
+        [(ngModel)]= "newUser.state"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="zipCode">Zip</label>
+        <input
+        type="zipCode"
+        class="form-control"
+        name="zipCode"
+        required
+        [(ngModel)]= "newUser.zipCode"
+        />
+      </div>
+
+        <select class="form-select" type="membershipType" name="membershipType" required [(ngModel)]= "newUser.membershipType">
+          <option selected>This option selected</option>
+          <option value="1">$125 - Military, unlimited</option>
+          <option value="2">$115 – Military, 3x week</option>
+          <option value="3">$135 – Non-Military, unlimited</option>
+          <option value="4">$125, Non-Military, 3x week</option>
+          <option value="5">$95 – Punch Card, 10 visits</option>
+          <option value="6">Married / Family – Ask about pricing</option>
+        </select>
+
+
+
+
+      <div class="form-group">
         <label for="email">Email</label>
         <input
         type="email"

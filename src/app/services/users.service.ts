@@ -7,11 +7,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UsersService {
-  baseUrl: string = "http://localhost:8080/api"
+  baseUrl: string = "http://localhost:8080/api/user"
   constructor(private http:HttpClient) { }
 
   createUser(newUser: User) : Observable <User> {
-    return this.http.post<User>(`${this.baseUrl}/signup`,newUser)
+    return this.http.post<User>(`${this.baseUrl}/register`,newUser)
   }
   getUser(getUser: User) : Observable <User>{
     return this.http.post<User>(`${this.baseUrl}/login`,getUser)
